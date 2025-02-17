@@ -8,7 +8,7 @@ int main()
     char nome_da_cidade[100];
     float populacao;
     float area_da_cidade;
-    double pib; // Correto: double para PIB
+    double pib; 
 
     // Coletando informações
     printf("Código da Cidade:\n");
@@ -27,7 +27,7 @@ int main()
     scanf("%f", &area_da_cidade);
 
     printf("PIB (em bilhões):\n");
-    scanf("%lf", &pib); // Correto: %lf para double
+    scanf("%lf", &pib); 
 
     // Mostrando os dados da cidade
     printf("\n===== Informações da Cidade =====\n");
@@ -36,7 +36,6 @@ int main()
     printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos);
     printf("População: %.2f habitantes\n", populacao);
     printf("Área da Cidade: %.2f km²\n", area_da_cidade);
-    printf("PIB: R$ %.2lf bilhões\n", pib); // Correto: %.2lf para double
-
+    printf("PIB: R$ %.2lf bilhões\n", pib); 
     return 0;
 }
