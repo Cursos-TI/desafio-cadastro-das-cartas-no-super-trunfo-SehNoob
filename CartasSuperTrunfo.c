@@ -1,22 +1,42 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main()
+{
+    // Definição das variáveis
+    int codigo_da_cidade;
+    int numero_de_pontos_turisticos;
+    char nome_da_cidade[100];
+    float populacao;
+    float area_da_cidade;
+    double pib; // Correto: double para PIB
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Coletando informações
+    printf("Código da Cidade:\n");
+    scanf("%d", &codigo_da_cidade);
+
+    printf("Nome da Cidade:\n");
+    scanf(" %[^\n]", nome_da_cidade);
+
+    printf("Número de Pontos Turísticos:\n");
+    scanf("%d", &numero_de_pontos_turisticos);
+
+    printf("População:\n");
+    scanf("%f", &populacao);
+
+    printf("Área da Cidade:\n");
+    scanf("%f", &area_da_cidade);
+
+    printf("PIB (em bilhões):\n");
+    scanf("%lf", &pib); // Correto: %lf para double
+
+    // Mostrando os dados da cidade
+    printf("\n===== Informações da Cidade =====\n");
+    printf("Código da Cidade: %d\n", codigo_da_cidade);
+    printf("Nome da Cidade: %s\n", nome_da_cidade);
+    printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos);
+    printf("População: %.2f habitantes\n", populacao);
+    printf("Área da Cidade: %.2f km²\n", area_da_cidade);
+    printf("PIB: R$ %.2lf bilhões\n", pib); // Correto: %.2lf para double
 
     return 0;
 }
